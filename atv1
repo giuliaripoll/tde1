@@ -1,0 +1,62 @@
+numero = int(input("Digite um número: "))
+numeroAnt = numero - 1
+numeroSuc = numero + 1
+print("O antecessor deste número é: " + str(numeroAnt))
+print("O sucessor deste número é: " + str(numeroSuc))
+
+
+
+anoNascimento = int(input("Digite o ano de nascimento: "))
+anoAtual = 2032
+idade = anoAtual - anoNascimento
+print("Sua idade em 2032 será: " + str(idade))
+
+
+salarioFunc = int(input("Digite seu salário: "))
+salarioMin = 1.212
+salarioTot = salarioFunc / salarioMin
+if salarioMin <= 1:  print("Voce recebe " + str(salarioMin) + " salário minimo " )
+else:   print("Você recebe " + str(salarioMin) + " salários minimos ")
+
+
+diametro = int(input("Digite o diametro para calcularmos a área: "))
+raio = diametro / 2
+pi = 3.14
+area = pi + raio ** 2
+print(area)
+
+
+
+precoProduto = int(input("Digite o preço: "))
+precoParcela = (precoProduto*105) / 100
+parcelaUnitaria = precoParcela / 3
+precoSemJuros = precoProduto / 2
+precoDesconto = (precoProduto*95) / 100
+print("O valor de cada parcela é: " + str(parcelaUnitaria))
+print("O valor total com juros é: " + str(precoParcela))
+print("O preço à vista com 5% de desconto é: " + str(precoDesconto))
+
+
+import math
+
+catetoUm = float(input("Digite o valor do cateto adjacente: "))
+catetoDois = float(input("Digite o valor do cateto oposto: "))
+hipotenusa = math.sqrt(catetoUm ** 2 + catetoDois ** 2)
+print("O valor da hipotenusa é: " + str(hipotenusa))
+
+
+hora = int(input("Digite a hora: "))
+minutos = int(input("Digite os minutos: "))
+segundos = int(input("Digite os segundos: "))
+totalMinutos = (segundos / 60) + minutos + (hora / 60)
+totalSegundos = (segundos + (minutos * 60) + ((hora*60)*60))
+print("Desde o início do dia se passaram " + str(totalSegundos) + " segundos ou " + str(totalMinutos) + " minutos ")
+
+
+altura = float(input("Digite a altura do cilindro: "))
+raio = float(input("Digite o raio: "))
+areaTotal = (2 * 3.14 * raio * altura) + (2 * 3.14 * (raio ** 2))
+quantidadeLitros = areaTotal / 3
+quantidadeLatas = quantidadeLitros/ 5
+valorTotal = quantidadeLatas * 50
+print("Você precisará de " + str(quantidadeLatas) + " latas. " " E o valor total é de: " + str(valorTotal))
